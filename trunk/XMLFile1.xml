@@ -1,9 +1,66 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<company>
-  <name>XYZ Inc.</name>
-  <address1>One Abc Way</address1>
-  <address2>Some avenue</address2>
-  <city>Tech city</city>
-  <country>Neverland</country>
-</company>
+﻿<?xml version="1.0"?>
+<persons>
 
+	<person username="MP11">
+		<name>Иван</name>
+		<surname>Иванов</surname>
+		<address index="100500">
+			<city name="Питер">
+				<districtNumber number="61">
+					<districtName>Центральный</districtName>
+				</districtNumber>
+			</city>
+		</address>
+	</person>
+  	<person username="MP12">
+		<name>Петр</name>
+		<surname>Ильин</surname>
+		<address index="200600">
+			<city name="Москва">
+				<districtNumber number="62">
+					<districtName>Восточный</districtName>
+				</districtNumber>
+			</city>
+		</address>
+	</person>
+		<person username="MP13">
+		<name>Евлампий</name>
+		<surname>Сидоров</surname>
+		<address index="000900">
+			<city name="Воронеж">
+				<districtNumber number="63">
+					<districtName>Западный</districtName>
+				</districtNumber>
+			</city>
+		</address>
+	</person>
+		<person username="MP14">
+		<name>Олег</name>
+		<surname>Утеков</surname>
+		<address index="890300">
+			<city name="Москва">
+				<districtNumber number="64">
+					<districtName>Южный</districtName>
+				</districtNumber>
+			</city>
+		</address>
+	</person>
+		<person username="MP15">
+		<name>Дмитрий</name>
+		<surname>Гусев</surname>
+		<address index="123456">
+			<city name="Ростов">
+				<districtNumber number="65">
+					<districtName>Северный</districtName>
+				</districtNumber>
+			</city>
+		</address>
+	</person>
+  
+ <CDATA-ELEMENT-SAMPLE>
+ <![CDATA[ 
+             Этот блок предназначен для любых данных, текста, спецсимволов, которые не будут восприниматься как инструкции !№"Й!;!";!%53цуепц4662
+          ]]> 
+    </CDATA-ELEMENT-SAMPLE>
+  
+</persons>
