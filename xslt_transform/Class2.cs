@@ -30,7 +30,8 @@ public class XmlTransformUtil
             //подгружаем xml
             XPathDocument myXPathDoc = new XPathDocument(sXmlPath);
 
-            XslTransform myXslTrans = new XslTransform();
+            //XslTransform myXslTrans = new XslTransform();
+            XslCompiledTransform myXslTrans = new XslCompiledTransform();
 
             //подгружаем xslt
             myXslTrans.Load(sXslPath);
@@ -38,6 +39,7 @@ public class XmlTransformUtil
             //на выход в html
             XmlTextWriter myWriter = new XmlTextWriter
                 ("result.html", null);
+                //("result.xml", null);
 
             //преобразование
             myXslTrans.Transform(myXPathDoc, null, myWriter);
@@ -58,7 +60,7 @@ public class XmlTransformUtil
     public static void PrintUsage()
     {
         Console.WriteLine
-        ("Usage: XmlTransformUtil.exe <xml path> <xsl path>");
+        ("Usage: XmlTransform1.exe <xml path> <xsl path>");
     }
 
 }
